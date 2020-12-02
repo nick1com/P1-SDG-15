@@ -3,6 +3,7 @@
 
 
 
+int personX;
 int personY;
 int personsizeX;
 int personsizeY;
@@ -26,11 +27,13 @@ PImage treeCut;
 
 void setup() {
   size(500, 500);
+  characterGuy=loadImage("Guy1Ghost.png");
   backgroundFar1=loadImage("BackgroundJngTrees.png");
   backgroundMid1=loadImage("MiddlegroundJngTrees.png");
   backgroundClo1=loadImage("GroundForest1.png");
   treeFull=loadImage("INTERtree1.png");
   treeCut=loadImage("INTERtree2.png");
+  
   personX = width/10;
   personY = (height-(height/3))+jump;
   personsizeX=width/10;
@@ -41,6 +44,8 @@ void setup() {
 void draw() {
   
   spiritVision1();
+  characterGuy.resize(width,height);
+  image(characterGuy,0,0);
   rect(personX+movement, personY, personsizeX, personsizeY);
   println(moveFar);
 }
