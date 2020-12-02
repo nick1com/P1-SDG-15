@@ -1,7 +1,7 @@
 Stickman stickman;
 float x;
 float y;
-
+//Hej med dig
 void setup(){
   size(1000,1000);
   stickman=new Stickman(x,y,60,60,#291F1F);
