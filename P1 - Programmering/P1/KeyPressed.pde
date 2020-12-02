@@ -34,6 +34,7 @@ void keyPressed() {
   if (key == 's' || keyCode == DOWN ) {
   }
   
-  if(key == 'e' ){
+  if(key == 'e' ){   
+   cut=true;
   }
 }
