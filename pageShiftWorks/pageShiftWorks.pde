@@ -8,23 +8,25 @@ size(200,200);
 
 void draw() {
 
-//These statements check which page you are on,
-//and it is important that the else if statements are used
-//instead of just if statements.
+//These switch case statements check which page you are on, 
+//depending which value the variable pageCounter is on.   
 
-//Also this should be the only if hierarchy in the main draw loop.
+//Also this should be the only thing in the main draw loop.
 
-if(pageCounter == 0){
-  page_0();
-  //(...)
-  //(...)
-  //(...)
-}
-else if(pageCounter == 1) {
-  page_1();
-}
-else if(pageCounter == 2) {
-  page_2();
+switch(pageCounter) {
+
+case 0:
+page_0();
+break;
+
+case 1: 
+page_1();
+break;
+
+case 2: 
+page_2();
+break;
+
 }
   
 }
