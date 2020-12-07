@@ -4,14 +4,21 @@ void mouseClicked() {
 
 //Checks what page the program is currently on,
 //and then changes to another page accordingly.
-if(pageCounter == 0){
-  pageCounter = 1;
-}
-else if(pageCounter == 1){
-  pageCounter = 2;
-}
-else if(pageCounter == 2){
-  pageCounter = 0;
-}
 
+switch(pageCounter) {
+
+case 0:
+pageCounter = 1;
+break;
+
+case 1: 
+pageCounter = 2;
+break;
+
+case 2: 
+pageCounter = 0;
+break;
+
+}
+  
 }
