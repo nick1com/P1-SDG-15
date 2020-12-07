@@ -6,12 +6,18 @@ float mainscreentextSize;
 
 float ButtonXpos;  
 
+
+  // Floats used to track Startbutton "area".
 float StartbuttonX, StartbuttonY, StartbuttonXW, StartbuttonYH;
+
+  
+  // Floats used to track Exitbutton "area".
+float ExitbuttonX, ExitbuttonY, ExitbuttonXW, ExitbuttonYH; 
   
   
 void object_values() {    // All the values we need for frontpage
 
-//mainframe
+//mainframe values, given to the box framing the instructions.
   
   
   mainframeX = width/2;
@@ -34,7 +40,7 @@ controlsW = width/5;
 controlsH = (height*23)/100;
 
  
-//Enter button position
+//Made to reposition the enter and exit image position to wished positions.
 
 ButtonXpos = width * 0.013;
 
@@ -55,11 +61,17 @@ StartbuttonYH = height*0.905;
 
 //Exitbutton values for button tracking.
 
+ExitbuttonX = width*0.52;
+
+ExitbuttonXW = width*0.80;
+
+ExitbuttonY = height*0.78;
+
+ExitbuttonYH = height*0.905;
 
 
 
-
-//Button scaling value
+//grow value
 
 
 
