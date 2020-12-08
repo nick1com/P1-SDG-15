@@ -20,5 +20,5 @@ void shamanDetect() {
   textSize(30);
   text("E",490,510);
  }
- 
+println("Y" + mouseY); 
 }
