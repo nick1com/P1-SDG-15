@@ -1,0 +1,3 @@
+void ShamanHouse(){
+  background5();
+}
