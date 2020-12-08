@@ -28,22 +28,7 @@ void setup() {
   
   // Initiate object values and pictures.
   object_values();
-  background(backgroundColour);
-  frontpage_forrest = loadImage("frontpage_forrest.png");
-  frontpage_forrest.resize(width, height);
-  Controls = loadImage("Controls.png");
-  Controls.resize(controlsXscale, controlsYscale);
-
-  //The button images.
-  Enter = loadImage("Enter.png");
-  Enter.resize(width, height);
-  EnterWhite = loadImage("EnterWhite.png");
-  EnterWhite.resize(width, height);
-  
-  Exit = loadImage("Exit.png");
-  Exit.resize(width, height);
-  ExitWhite = loadImage("ExitWhite.png");
-  ExitWhite.resize(width, height);
+  startUp(); 
 
 
   //Size of canvas
@@ -53,25 +38,7 @@ void setup() {
 }
 
 void draw() {
-  image(frontpage_forrest, zero, zero);
-  strokeWeight(10);
-  
-  instructionFrame = new Box (blackColour, palegoldenrod, mainframeX, mainframeY*0.92, mainframeW, mainframeH);
-
-  image(Controls, controlsW, controlsH);
-  
-   
- 
-  image(Enter, ButtonXpos, zero);
-  
-  if (mouseX>=StartbuttonX && mouseX<=StartbuttonXW && mouseY>=StartbuttonY && mouseY<StartbuttonYH)
-  image(EnterWhite, ButtonXpos, zero);
-  
-  
-  image(Exit, ButtonXpos, zero);
-  if (mouseX>=ExitbuttonX && mouseX<=ExitbuttonXW && mouseY>=ExitbuttonY && mouseY<ExitbuttonYH)
-  image(ExitWhite, ButtonXpos, zero);
-
+drawFrontpage();
   
   
   /* This part is to figure out where the mouse is, was used for tracking button edges.
@@ -92,21 +59,6 @@ void draw() {
   
   //Calls the variable mouseClicked, meaning if mouse is getting clicked do...
 
-  void mouseClicked(){
-   
-    //If the mouse is clicked and the mouse is within the area the program will enter next page.  
-    
-  if (mouseX>=StartbuttonX && mouseX<=StartbuttonXW && mouseY>=StartbuttonY && mouseY<StartbuttonYH) {
-    
-    
-  }
-    
-  
-  //If the mouse is clicked and the mouse is within the area the program will exit.
-  
-  if (mouseX>=ExitbuttonX && mouseX<=ExitbuttonXW && mouseY>=ExitbuttonY && mouseY<ExitbuttonYH){
-  exit();  
-  
-  
-}
+void mouseClicked(){
+  FrontpageMouseClicked();
 }
