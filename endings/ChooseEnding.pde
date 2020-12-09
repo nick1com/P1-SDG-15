@@ -2,16 +2,16 @@ void ChooseEnding() {
 
 //Baddest ed  
 
-if(TreesCut == 6 && treeIncrement == 0) {
+if(ChoiceValue == 0 && treeIncrement == 0) {
 TreesCutForEndings = 0;
 treeIncrement = 1;
 }
-else if (TreesCut == 6 && treeIncrement == 1) {
+else if (ChoiceValue == 0 && treeIncrement == 1) {
 TreesCutForEndings = 1;
 treeIncrement = 2;
 }
 
-else if (TreesCut == 6 && treeIncrement == 2) {
+else if (ChoiceValue == 0 && treeIncrement == 2) {
 exit();
 }
 
@@ -30,17 +30,17 @@ exit();
 
 //best ed
 
-else if (TreesCut == 0 && treeIncrement == 0) {
+else if (ChoiceValue == 2 && treeIncrement == 0) {
 TreesCutForEndings = 3;
 treeIncrement = 1;
 }
 
-else if (TreesCut == 0 && treeIncrement == 1) {
+else if (ChoiceValue == 2 && treeIncrement == 1) {
 TreesCutForEndings = 4;
 treeIncrement = 2;
 }
 
-else if (TreesCut == 0 && treeIncrement == 2) {
+else if (ChoiceValue == 2 && treeIncrement == 2) {
 TreesCutForEndings = 5;
 treeIncrement = 3;
 }
