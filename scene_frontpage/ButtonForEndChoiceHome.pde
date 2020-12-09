@@ -7,7 +7,7 @@ void ButtonForEndChoiceHome() {
   strokeWeight(1);
   stroke(0);
   textSize(mainscreentextSize);
-  text("What do you do with the essens of the relic?", (width/2)+1, (height*2/3)+1, width/3*5, height*12/10);
+  text("What do you do with the essence of the relic?", (width/2)+1, (height*2/3)+1, width/3*5, height*12/10);
   rectMode(CORNER);
 
   rectMode(CENTER);
