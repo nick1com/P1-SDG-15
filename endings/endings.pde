@@ -5,6 +5,12 @@ PImage BadEnd;
 PImage BossOffice;
 PImage BossOfficeGoodEnd;
 PImage BadEnd1;
+PImage mediumend1;
+PImage MediumEndfinal;
+PImage Forrest2Sky;
+
+
+
 int convoCounter = 0;
 int pageCounter = 0;
 
@@ -14,12 +20,14 @@ int treeIncrement = 0;
 int ChoiceValue;
 
 
-int backgroundColour = #00755e; 
-int jungleVinesColour = #92ca7e;
-int startButtonColour = #0c2d12;
-int goldColour = #FFD700;
-int palegoldenrod = #EEE8AA;
-int titleColour = #0028ff;
+int backgroundColour = #6ac7ed;
+int BlueSpiritBorder = #6ae7ed;
+int CurrentButtonColour;
+int startButtonColour = #6ac7ed;
+int startButtonColour2 = #6aedd2;
+int BlueSpiritText = #cbf5f7;
+int palegoldenrod = #aef2f5;
+int titleColour = #6aedd2;
 
 
 Button Buy_the_forest;
@@ -29,6 +37,10 @@ Button Refuse_to_buy_the_forest;
 
 //fjern når det bliver sat sammen med hovedprogram
 int PatchWork = 0;
+
+int HeightOfContinueText = ((height * 65)/100);
+
+int colorOfContinueText = #d62020;
 
 
 
@@ -57,7 +69,14 @@ BadEnd1 = loadImage("BadEnd1.png");
 BadEnd1.resize(width,height);
 
 
+mediumend1 = loadImage("mediumend1.png");
+mediumend1.resize(width,height);
 
+MediumEndfinal = loadImage("MediumEndfinal.png");
+MediumEndfinal.resize(width,height);
+
+Forrest2Sky = loadImage("Forrest2Sky.png");
+Forrest2Sky.resize(width,height);
 
 mainframe();
 Buy_the_forest = new Button(1,"Buy the forest");
@@ -69,9 +88,10 @@ Refuse_to_buy_the_forest = new Button(3,"Refuse to buy the forest");
 void draw() {
 //background(backgroundColour);
  if(PatchWork == 0) {
+ image(Forrest2Sky,0,0,width,height);
  ButtonForEndChoiceHome();
  Buy_the_forest.display();
- if(TreesCut < 6 && TreesCut > 0) {
+ if(TreesCut < 6) {
  Settle_down_in_the_forest.display();
  }
  if(TreesCut == 0) {
@@ -87,7 +107,7 @@ void draw() {
 void mouseClicked() {
    if(PatchWork == 0) {
    Buy_the_forest.Buy_the_forestVOID();
-   Settle_down_in_the_forest.Buy_the_forestVOID();
+   Settle_down_in_the_forest.Settle_down_in_the_forestVOID();
    Refuse_to_buy_the_forest.Refuse_to_buy_the_forestVOID();  
    
    

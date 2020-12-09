@@ -1,9 +1,9 @@
 void ButtonForEndChoiceHome() {
   rectMode(CENTER);
-  fill(#0b2f25);
+  fill(backgroundColour);
   rect(width/2, height/10, width, height/10);
   textAlign(CENTER);
-  fill(goldColour);
+  fill(BlueSpiritText);
   strokeWeight(1);
   stroke(0);
   textSize(mainscreentextSize);
@@ -11,7 +11,7 @@ void ButtonForEndChoiceHome() {
   rectMode(CORNER);
 
   rectMode(CENTER);
-  stroke(jungleVinesColour);
+  stroke(BlueSpiritBorder);
   strokeWeight(10);
   fill(palegoldenrod);
   rect(mainframeX, mainframeY, mainframeW, mainframeH);
@@ -54,9 +54,7 @@ class Button {
     y = mainframeY*0.5 * (0.4 + 0.8 * buttonNumber);
     this.buttontext=buttontext; //this er referance til classen som jeg har refereret til i linje 5 (this = linje 5 i dette tilfælde) (parameteret er defineret i linje 14)
 
-    if (this.buttonNumber == 1) { 
-      scene = 1;
-    }
+   
 
   }
 
@@ -74,8 +72,8 @@ class Button {
     if (mousePressed && mouseButton == LEFT && mouseX >= x-width/4*3/2 && mouseX <= x + width/4*3/2 && mouseY >y-mainframeY/3/2 && mouseY <= y + mainframeY/3/2) {
 
       grow = 0.99;
-      startButtonColour = #244229;
-    } else startButtonColour = #0c2d12;
+      CurrentButtonColour = startButtonColour2;
+    } else CurrentButtonColour = startButtonColour;
    
 
 
@@ -83,7 +81,7 @@ class Button {
 
     stroke(1);
     strokeWeight(1);
-    fill(startButtonColour);
+    fill(CurrentButtonColour);
     rectMode(CENTER);
     rect(x, y, (width*3/4) * grow, (mainframeY/3) * grow);
     displayText();
@@ -94,7 +92,7 @@ class Button {
   void displayText() {
 
     textAlign(LEFT);
-    fill(goldColour);
+    fill(BlueSpiritText);
     textSize((mainscreentextSize)*grow*grow); // fjern hardcoding
     text(buttontext, width/6-20, y+20);
   }
@@ -108,23 +106,26 @@ class Button {
     if (mouseX >= x-width/4*3/2 && mouseX <= x + width/4*3/2 && mouseY >y-mainframeY/3/2 && mouseY <= y + mainframeY/3/2) {
       
         ChoiceValue = 6;
+        println("t", " ",ChoiceValue);
          PatchWork++;
    
     }
   }
   void Settle_down_in_the_forestVOID() {
     if (mouseX >= x-width/4*3/2 && mouseX <= x + width/4*3/2 && mouseY >y-mainframeY/3/2 && mouseY <= y + mainframeY/3/2) {
-      
+     
         ChoiceValue = 10;
+        println("t", " ",ChoiceValue);
          PatchWork++;
-
+  
     }
-  }
+   }
 
   void Refuse_to_buy_the_forestVOID() {
     if (mouseX >= x-width/4*3/2 && mouseX <= x + width/4*3/2 && mouseY >y-mainframeY/3/2 && mouseY <= y + mainframeY/3/2) {
      
         ChoiceValue = 0;
+        println("t", " ",ChoiceValue);
          PatchWork++;
   
     }
