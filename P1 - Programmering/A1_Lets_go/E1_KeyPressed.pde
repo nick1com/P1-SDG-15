@@ -1,18 +1,29 @@
 
 
+
+
+
+//---------------------------------------------------------------------//
+
+
 void keyPressed() {
 
   if (key == 'd' || keyCode == RIGHT) {
-   
-    Right=true;  }
+
+    Right=true;
+  }
   if (key == 'a' || keyCode == LEFT) {
 
-    Left=true;    }
+    Left=true;
+  }
   if (key == 's' || keyCode == DOWN ) {
     reset=true; 
-  down=true;}
+    down=true;
+  }
   if (key == 'e' ) {  
-    use=true;  }
+    use=true;
+  }
   if (key == 'w' || keyCode == UP || key == ' ') {
-    upJump=true; }
+    upJump=true;
+  }
 }
