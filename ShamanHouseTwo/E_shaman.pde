@@ -1,9 +1,9 @@
 void shamanE() {
-if(movement >= width-ShamanDetection){
+if(movement >= ShamanDetection){
   if (keyPressed) {
     if (key == 'e') {
       convoCounter = 1;
-      //backmove=0;
+      backmove=0;
 }
 }
 }
@@ -11,14 +11,14 @@ if(movement >= width-ShamanDetection){
 
 
 void shamanDetect() {
- if(movement >= width-ShamanDetection){
+ if(movement >= ShamanDetection){
   noStroke();
   fill(255);
   rectMode(CENTER);
-  rect(500,500,40,40);
+  rect(width*0.625,height*0.62,height/8,height/8);
   fill(0);
-  textSize(30);
-  text("E",490,510);
+  textSize(width/22);
+  text("E",width*0.61,height*0.65);
  }
-println("Y" + mouseY); 
+//println("Y" + mouseY); 
 }

@@ -1,5 +1,5 @@
 void background5(){
-  image(background5,0,0);
+  image(background5,0,(-1*(height/8)));
   image(backgroundClo2,0,0);
-  image(shaman,width*0.059,height*0.086);
+  image(shaman,ShamanX,ShamanY);
 }

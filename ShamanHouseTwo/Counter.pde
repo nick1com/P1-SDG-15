@@ -6,16 +6,16 @@ convoCounter = 0;
 break;
 
 case 1:
-if (mouseX>=470 && mouseX<=530 && mouseY>=500 && mouseY<=550){
+if (mouseX>=width*0.5875 && mouseX<=width*0.6625 && mouseY>=height*0.625 && mouseY<=height*0.6875){
   convoCounter = 2;
 }
-else if(mouseX>=540 && mouseX<=600 && mouseY>=500 && mouseY<=550){
+else if(mouseX>=width*0.675 && mouseX<=width*0.75 && mouseY>=height*0.625 && mouseY<=height*0.6875){
   convoCounter = 3;
 }
 break;
 
 case 2:
-if (mouseX>=470 && mouseX<=530 && mouseY>=510 && mouseY<=540){
+if (mouseX>=width*0.5875 && mouseX<=width*0.6625 && mouseY>=height*0.6375 && mouseY<=height*0.675){
 convoCounter = 0;
 break;
 }

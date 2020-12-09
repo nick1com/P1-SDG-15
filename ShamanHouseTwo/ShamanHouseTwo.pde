@@ -18,7 +18,7 @@ boolean moveLeft=false;
 
 boolean connected=true;
 
-int ShamanDetection=500;
+float ShamanDetection;
 
 float jump=0;
 float jumpSpeed=6;
@@ -31,9 +31,17 @@ int ShamanHouseoffset=310;
 int personX;
 float personY;
 
+float ShamanX;
+float ShamanY;
+float Etext=width/13.33;
 
 void setup() {
- size(800,800);
+  fullScreen();
+ //size(800,800);
+ShamanX=(-1*(width/4));
+ShamanY=(-1*(height/10));
+personY=(-1*(height/15));
+ShamanDetection=width*0.35;
   //fullScreen();
  characterMain=loadImage("Guy1GhostNew.png");
  characterMainRev=loadImage("Guy1GhostReverse.png");
@@ -47,8 +55,8 @@ characterMain.resize(width,height);
 characterMainRev.resize(width,height);
 
 backgroundClo2.resize(width, height);
-background5.resize(width,height-100);
-shaman.resize(width-250,height-100);
+background5.resize(width,height);
+shaman.resize(width,height);
 
 
 }
@@ -63,7 +71,7 @@ shamanE();
 convoOne();
 movement();
 Character();
-
+println(mouseX);
 }
 
 void mouseClicked() {
