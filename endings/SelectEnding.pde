@@ -58,7 +58,6 @@ class Button {
       scene = 1;
     }
 
-
   }
 
 
@@ -107,28 +106,30 @@ class Button {
 
   void Buy_the_forestVOID() {
     if (mouseX >= x-width/4*3/2 && mouseX <= x + width/4*3/2 && mouseY >y-mainframeY/3/2 && mouseY <= y + mainframeY/3/2) {
-      if(TreesCut == 6) {
-        ChoiceValue = 0;
-      }
+      
+        ChoiceValue = 6;
+         PatchWork++;
+   
     }
   }
   void Settle_down_in_the_forestVOID() {
     if (mouseX >= x-width/4*3/2 && mouseX <= x + width/4*3/2 && mouseY >y-mainframeY/3/2 && mouseY <= y + mainframeY/3/2) {
-      if(TreesCut < 5 && TreesCut > 2) {
-        ChoiceValue = 1;
-      }
+      
+        ChoiceValue = 10;
+         PatchWork++;
+
     }
   }
 
   void Refuse_to_buy_the_forestVOID() {
-    
     if (mouseX >= x-width/4*3/2 && mouseX <= x + width/4*3/2 && mouseY >y-mainframeY/3/2 && mouseY <= y + mainframeY/3/2) {
-      if(TreesCut == 0) {
-        ChoiceValue = 2;
-      }
+     
+        ChoiceValue = 0;
+         PatchWork++;
+  
     }
    }
-}
+} 
 
 
 

@@ -11,7 +11,7 @@ int pageCounter = 0;
 int TreesCut = 0;
 int TreesCutForEndings = 0;
 int treeIncrement = 0;
-int ChoiceValue = 0;
+int ChoiceValue;
 
 
 int backgroundColour = #00755e; 
@@ -70,9 +70,13 @@ void draw() {
 //background(backgroundColour);
  if(PatchWork == 0) {
  ButtonForEndChoiceHome();
- Buy_the_forest.display(); 
+ Buy_the_forest.display();
+ if(TreesCut < 6 && TreesCut > 0) {
  Settle_down_in_the_forest.display();
+ }
+ if(TreesCut == 0) {
  Refuse_to_buy_the_forest.display();
+ }
  }
 
  if(PatchWork == 1) {
@@ -87,7 +91,7 @@ void mouseClicked() {
    Refuse_to_buy_the_forest.Refuse_to_buy_the_forestVOID();  
    
    
-   PatchWork++;
+  
    }
  
    if(PatchWork == 1) {
