@@ -9,7 +9,7 @@ case 1:
 if (mouseX>=width*0.5875 && mouseX<=width*0.6625 && mouseY>=height*0.625 && mouseY<=height*0.6875){
   convoCounter = 2;
 }
-else if(mouseX>=width*0.675 && mouseX<=width*0.75 && mouseY>=height*0.625 && mouseY<=height*0.6875){
+else if(mouseX>=width*0.710 && mouseX<=width*0.792 && mouseY>=height*0.625 && mouseY<=height*0.6875){
   convoCounter = 3;
 }
 break;
