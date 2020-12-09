@@ -47,6 +47,7 @@ boolean use5=false;
 boolean use6=false;
 
 boolean RightChoice2=true;
+boolean RightChoice3=true;
 
 boolean groundLevel=true;
 boolean reset=false;

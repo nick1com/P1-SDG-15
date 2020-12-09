@@ -2,57 +2,38 @@
 
 
 
-void background3Far() {
-  if(RightChoice2){
+void backgroundFar4() {
+  if(RightChoice3){
 
     for (int i = -1; i <= 10; i++) {    
-    image(backgroundFar2, i*width-moveFar, 0);
-    image(backgroundMid2, i*width-moveMid, 0);
+    image(backgroundFar4, i*width-moveFar, 0);
+    image(backgroundMid4, i*width-moveMid, 0);
   }
   
 }
-if(!RightChoice2){
+if(!RightChoice3){
   for (int i = -1; i <= 10; i++) {    
-    image(backgroundFar3, i*width-moveFar, 0);
-    image(backgroundMid3, i*width-moveMid, 0);
+    image(backgroundFar4, i*width-moveFar, 0);
+    image(backgroundMid4, i*width-moveMid, 0);
   }
-
-
-  RiverBack(2);
 }}
 
-void River(int itemp){
-  
-  int i = itemp;
-image(background1Ext3, i*width-moveClo, 0+30);}
-  
-void RiverBack(int itemp){
-
-    int i = itemp;
-    for (int y = i-1; y<= i+2; y++) {
-image(background2Ext3, y*width-moveFar, 0);
-if(y<= i+1){
-image(backgroundMid3, y*width-moveMid, 0);}
 
 
-    }
-}
-
-void background3Clo(){
+void background4Clo(){
   for (int i = -1; i <= 10; i++) {    
-    image(backgroundClo3, i*width-moveClo, 0);
+    image(backgroundClo4, i*width-moveClo, 0);
   }
-     River(6);
 }
   
-  void movementB3(){
+ /* void movementB4(){
   Main.moveMent(0,1020,0,1200,0,1200);
-  if(use4){
+  if(use7){
   Main.moveMent(1020,1820,1200,1954,1020,1820);}
-  if(use5){
+  if(use8){
   Main.moveMent(1820,2620,1954,2654,1820,2620);}
 
-  if(use6){
+  if(use9){
   Main.moveMent(2620,4724,2654,4754,2620,600000);}
   
   }
@@ -87,4 +68,4 @@ void scene3Trees(){
 tree4();
 tree5();
 tree6();
-}
+}*/

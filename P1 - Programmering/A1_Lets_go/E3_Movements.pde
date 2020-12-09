@@ -1,3 +1,9 @@
+void moveMent2(){
+moveRight(0,width*15);
+moveLeft(0,width*15);   
+moveJump(0,width*15);}
+
+
 
 void moveRight(int minTemp,int maxTemp){
 int Min = minTemp;
