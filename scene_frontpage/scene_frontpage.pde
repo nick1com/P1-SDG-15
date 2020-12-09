@@ -5,65 +5,53 @@ int goldColour = #FFD700;
 int palegoldenrod = #EEE8AA;
 int titleColour = #0028ff;
 
-PImage frontpage_forrest;
 
-Button startButton;
-Button infoButton;
-Button exitButton;
-//Button testButton;
 
-//PImage test1;
+int TreesCut = 0;
+int ChoiceValue = 0;
+
+
+
+Button Buy_the_forest;
+Button Settle_down_in_the_forest;
+Button Refuse_to_buy_the_forest;
+
+
+
 void setup() {
   background(backgroundColour);
-  frontpage_forrest = loadImage("frontpage_forrest.png");
-  frontpage_forrest.resize(width,height);
-  size(1280, 720); 
-//fullScreen();
-//size(720, 576);
+
+
+fullScreen();
+
   mainframe();
-startButton = new Button(1,"Start game");
-infoButton = new Button(2,"Instructions");
-exitButton = new Button(3,"Quit game");
-//testButton = new Button(4,"Test");
+Buy_the_forest = new Button(1,"Buy the forest");
+Settle_down_in_the_forest = new Button(2,"Settle down in the forest");
+Refuse_to_buy_the_forest = new Button(3,"Refuse to buy the forest");
+
 
 }
 
 
 void draw() {
-  image(frontpage_forrest, 0, 0);
-  rectMode(CENTER);
-  fill(#0b2f25);
-  rect(width/2, height/10, width/3, height/10);
-  textAlign(CENTER);
-  fill(goldColour);
-  strokeWeight(1);
-  stroke(0);
-  textSize(mainscreentextSize);
-  text("Promised Earth", (width/2)+1, (height*2/3)+1, width/3*5, height*12/10);
-
-
-  rectMode(CENTER);
-  stroke(jungleVinesColour);
-  strokeWeight(10);
-  fill(palegoldenrod);
-  rect(mainframeX, mainframeY, mainframeW, mainframeH);
+  
+  ButtonForEndChoiceHome();
+  
+  Buy_the_forest.display();
 
   
-  startButton.display();
+  Settle_down_in_the_forest.display();
 
   
-  infoButton.display();
+  Refuse_to_buy_the_forest.display();
 
-  
-  exitButton.display();
-
-  //testButton.display();
 
 
 }
- void mouseClicked(){ exitButton.exitgame();
- 
- }
- void mouseReleased() { exitButton.exitgame();
+ void mouseClicked(){
+   Buy_the_forest.Buy_the_forestVOID();
+   Settle_down_in_the_forest.Buy_the_forestVOID();
+   Refuse_to_buy_the_forest.Refuse_to_buy_the_forestVOID();  
+   
  
  }

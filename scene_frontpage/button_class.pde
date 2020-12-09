@@ -51,6 +51,8 @@ class Button {
     rectMode(CENTER);
     rect(x, y, (width*3/4) * grow, (mainframeY/3) * grow);
     displayText();
+    rectMode(CORNER);
+      
   }
 
   void displayText() {
@@ -61,13 +63,32 @@ class Button {
     text(buttontext, width/6-20, y+20);
   }
 
-  void exitgame() {
+
+
+
+
+
+  void Buy_the_forestVOID() {
+    if (mouseX >= x-width/4*3/2 && mouseX <= x + width/4*3/2 && mouseY >y-mainframeY/3/2 && mouseY <= y + mainframeY/3/2) {
+      if(TreesCut == 6) {
+        ChoiceValue = 1;
+      }
+    }
+  }
+  void Settle_down_in_the_forestVOID() {
+    if (mouseX >= x-width/4*3/2 && mouseX <= x + width/4*3/2 && mouseY >y-mainframeY/3/2 && mouseY <= y + mainframeY/3/2) {
+      if(TreesCut < 5 && TreesCut > 2) {
+        ChoiceValue = 2;
+      }
+    }
+  }
+
+  void Refuse_to_buy_the_forestVOID() {
     
     if (mouseX >= x-width/4*3/2 && mouseX <= x + width/4*3/2 && mouseY >y-mainframeY/3/2 && mouseY <= y + mainframeY/3/2) {
-      exit();
+      if(TreesCut == 0) {
+        ChoiceValue = 3;
+      }
     }
-  
-
-
- }
+   }
 }
