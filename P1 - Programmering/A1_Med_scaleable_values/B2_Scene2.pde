@@ -105,5 +105,5 @@ void tree3() {
     B2T3.display(treeFull, (3*width));
   }
 
-  cutB2T3(2570, 2650, 2774, 2814);
+  cutB2T3(width*3.2125, width*3.3125, width*3.4675, width*3.5175);
 }

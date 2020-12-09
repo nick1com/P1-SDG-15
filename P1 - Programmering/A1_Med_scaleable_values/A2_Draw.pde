@@ -7,9 +7,9 @@
 
 
 void draw() {
-  Scene2();
-  //testforscene3();
-  //Scene3();
+  //Scene2();
+  testforscene3();
+  Scene3();
   //Scene4();
 }
 
