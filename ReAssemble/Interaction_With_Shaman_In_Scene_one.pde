@@ -41,7 +41,10 @@ void convoOne() {
 switch(convoCounter) {
 case 0:// nothing has happend yet
  backmove=2;
+ //println(pageCounter, "", "page 1");
+ //println(convoCounter, "", "case 0");
 break;
+
 
 case 1: // start convo
 fill(255);
@@ -59,6 +62,9 @@ fill(255);
   textSize(width/120);
   text("ACCEPT",width*0.63,height*0.66875);
   text("DECLINE",width*0.73,height*0.66875);
+  
+  //println(pageCounter, "", "page 1");
+ //println(convoCounter, "", "case 1");
 break;
 
 case 2: //you agree 
@@ -73,6 +79,8 @@ case 2: //you agree
   text("Great, see you on the other side.",width*0.55,height*0.5875);
   textSize(width/120);
   text("DONE",width*0.635,height*0.66875);
+  //println(pageCounter, "", "page 1");
+  //println(convoCounter, "", "case 2");
 
 break;
 
@@ -89,6 +97,8 @@ background(0);
   text("GET IT DONE! *hangs up*",width*0.47,height*0.63);
   textSize(width/120);
   text("OK",width*0.64,height*0.66875);
+  //println(pageCounter, "", "page 1");
+  //println(convoCounter, "", "case 3");
 break;
 
 

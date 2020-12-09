@@ -10,7 +10,6 @@ void drawFrontpage() {
 
   image(Controls, controlsW, controlsH);
   
-   
  
   image(Enter, ButtonXpos, zero);
   
@@ -26,24 +25,6 @@ void drawFrontpage() {
 }
 }
 
-void FrontpageMouseClicked(){
-   
-    //If the mouse is clicked and the mouse is within the area the program will enter next page.  
-    
-  if (mouseX>=StartbuttonX && mouseX<=StartbuttonXW && mouseY>=StartbuttonY && mouseY<StartbuttonYH) {
-   pageCounter = 1; 
-    
-}
-    
-  
-  //If the mouse is clicked and the mouse is within the area the program will exit.
-  
-  if (mouseX>=ExitbuttonX && mouseX<=ExitbuttonXW && mouseY>=ExitbuttonY && mouseY<ExitbuttonYH){
-  exit();  
-  
-  
-}
-}
 
 
 

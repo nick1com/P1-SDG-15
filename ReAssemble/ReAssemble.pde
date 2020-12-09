@@ -24,6 +24,7 @@ switch(pageCounter) {
 
 case 0: //frontpage
 drawFrontpage();
+//println(pageCounter, "", "case 0");
 break;
 
 case 1: //Shaman Scene
@@ -33,10 +34,12 @@ shamanE();
 convoOne();
 movement();
 Character();
+//println(pageCounter, "", "case 1");
 break;
 
 case 2: // Loading Screen 1
 LoadingScreenOne();
+//println(pageCounter, "", "page 2");
 break;
 
 }

@@ -5,17 +5,19 @@
 void mouseClicked(){
   switch(pageCounter) {
   case 0:
-  FrontpageMouseClicked(); //frontpage clicks
+  println(pageCounter, "", "mouseClicked 0");
+  FrontpageMouseClicked(); //frontpage clicks //go to Over_All_Sceen_Selection_Structure tab to find function
   break;
   
   case 1:
   //mouseClickedPageCounter();
-  SceneSelecter();
+  println(pageCounter, "", "mouseClicked 1");
+  SceneSelecter(); //frontpage clicks //go to Over_All_Sceen_Selection_Structure tab to find function
   break;
   
-  case 2:
+ /* case 2:
   //mouseClickedPageCounter();
-  break;
+  break; */
   }
  
 }
