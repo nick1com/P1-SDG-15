@@ -40,11 +40,11 @@ void setup() {
  //size(800,800);
 ShamanX=(-1*(width/4));
 ShamanY=(-1*(height/10));
-personY=(-1*(height/15));
+personY=(-1*(height/12));
 ShamanDetection=width*0.35;
   //fullScreen();
- characterMain=loadImage("Guy1GhostNew.png");
- characterMainRev=loadImage("Guy1GhostReverse.png");
+ characterMain=loadImage("Guy1Normal.png");
+ characterMainRev=loadImage("Guy1Reverse.png");
   
  backgroundClo2=loadImage("GroundForest1.png");
  background5=loadImage("ShamanHouseAlt.png");
