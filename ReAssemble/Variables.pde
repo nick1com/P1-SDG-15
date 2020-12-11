@@ -71,3 +71,45 @@ float StartbuttonX, StartbuttonY, StartbuttonXW, StartbuttonYH;
   
   // Floats used to track Exitbutton "area".
 float ExitbuttonX, ExitbuttonY, ExitbuttonXW, ExitbuttonYH;
+
+
+
+
+
+
+
+
+
+
+
+//-----------------------------------------------Endings----------------------------------------------------------------//
+//int convoCounter = 0;
+//int pageCounter = 0;
+
+int TreesCut = 0;
+int TreesCutForEndings = 0;
+int treeIncrement = 0;
+int ChoiceValue;
+
+
+int EndingbackgroundColour = #6ac7ed;
+int BlueSpiritBorder = #6ae7ed;
+int CurrentButtonColour;
+int EndingStartButtonColour = #6ac7ed;
+int EndingstartButtonColour2 = #6aedd2;
+int BlueSpiritText = #cbf5f7;
+int Endingpalegoldenrod = #aef2f5;
+int EndingtitleColour = #6aedd2;
+
+
+EndingButton Buy_the_forest;
+EndingButton Settle_down_in_the_forest;
+EndingButton Refuse_to_buy_the_forest;
+
+int HeightOfContinueText = ((height * 65)/100);
+
+int colorOfContinueText = #d62020;
+
+
+//fjern når det bliver sat sammen med hovedprogram
+int PatchWork = 0;

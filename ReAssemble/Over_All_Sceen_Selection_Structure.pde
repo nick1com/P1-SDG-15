@@ -7,7 +7,8 @@ void FrontpageMouseClicked(){
     //If the mouse is clicked and the mouse is within the area the program will enter next page.  
     
   if (mouseX>=StartbuttonX && mouseX<=StartbuttonXW && mouseY>=StartbuttonY && mouseY<StartbuttonYH) {
-   pageCounter = 1; 
+       pageCounter = 100; 
+       convoCounter = 100; 
     
 }
     
@@ -22,7 +23,7 @@ void FrontpageMouseClicked(){
 }
 
 
-//------------------------------------------SceneSelecter-------------------------------------------------------------//
+//------------------------------------------First_Convo-------------------------------------------------------------//
 
 
 
@@ -30,8 +31,15 @@ void SceneSelecter()  {
 
 switch(convoCounter) { 
 
-//Shaman convo getting you to next loading scene or leaving you in this scene  
+//screen before sharman house
+case 100: 
+pageCounter = 1;
+convoCounter = 0;
+break;
   
+  
+//Shaman convo getting you to next loading scene or leaving you in this scene  
+
 case 0: //nothing is displayed in shaman conversation
 convoCounter = 0;
 break;
@@ -48,6 +56,7 @@ break;
 case 2: //this is the loadingscreen before quest 1
 if (mouseX>=width*0.5875 && mouseX<=width*0.6625 && mouseY>=height*0.6375 && mouseY<=height*0.675){ //
 pageCounter = 2;
+convoCounter = 40;
 }
 break;
 
@@ -57,8 +66,22 @@ convoCounter = 0;
 }
 break;
 
-//}
+
+case 40: 
+pageCounter = 40;
+break;
+
+
 
 }
 
+}
+
+
+
+
+//------------------------------------------SceneSelecter-------------------------------------------------------------//
+
+void potionClick1() {
+pageCounter = 40;
 }

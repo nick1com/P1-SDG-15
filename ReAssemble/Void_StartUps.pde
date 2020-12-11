@@ -1,3 +1,13 @@
+//-------------------------------------startUp000-------------------------------------------------//
+void startUp0() {
+BossOffice = loadImage("BossOffice.png");
+  BossOffice.resize(width, height);
+}
+
+
+
+
+
 //-------------------------------------startUp-------------------------------------------------//
 
 void startUp() {
@@ -134,5 +144,49 @@ ExitbuttonYH = height*0.905;
 //grow value
 
 
+
+}
+
+
+
+
+
+//----------------------------------------startUp4----------------------------------------------//
+void startUp4() {
+End2 = loadImage("End2.png");
+End2.resize(width,height);
+
+End2bad = loadImage("End2bad.png");
+End2bad.resize(width,height);
+
+GoodEndFinal = loadImage("GoodEndFinal.png");
+GoodEndFinal.resize(width,height);
+
+BadEnd = loadImage("BadEnd.png");
+BadEnd.resize(width,height);
+
+BossOffice = loadImage("BossOffice.png");
+BossOffice.resize(width,height);
+
+BossOfficeGoodEnd = loadImage("BossOfficeGoodEnd.png");
+BossOfficeGoodEnd.resize(width,height);
+
+BadEnd1 = loadImage("BadEnd1.png");
+BadEnd1.resize(width,height);
+
+
+mediumend1 = loadImage("mediumend1.png");
+mediumend1.resize(width,height);
+
+MediumEndfinal = loadImage("MediumEndfinal.png");
+MediumEndfinal.resize(width,height);
+
+Forrest2Sky = loadImage("Forrest2Sky.png");
+Forrest2Sky.resize(width,height);
+
+Endingmainframe();
+Buy_the_forest = new EndingButton(1,"Buy the forest");
+Settle_down_in_the_forest = new EndingButton(2,"Settle down in the forest");
+Refuse_to_buy_the_forest = new EndingButton(3,"Refuse to buy the forest");
 
 }

@@ -15,9 +15,32 @@ void mouseClicked(){
   SceneSelecter(); //frontpage clicks //go to Over_All_Sceen_Selection_Structure tab to find function
   break;
   
- /* case 2:
-  //mouseClickedPageCounter();
-  break; */
+  
+  case 100:
+  SceneSelecter();
+  break;
+  
+  
+  
+  
+  
+  case 2:
+  SceneSelecter();
+  break;
+  
+  case 40:
+  Buy_the_forest.Buy_the_forestVOID();
+  Settle_down_in_the_forest.Settle_down_in_the_forestVOID();
+  Refuse_to_buy_the_forest.Refuse_to_buy_the_forestVOID();
+  ChooseEnding();
+  println(pageCounter, "", "mouseClicked 40");
+  break;
+  
+  case 41:
+  ChooseEnding();
+  println(pageCounter, "", "mouseClicked 41");
+  break;
+  
   }
  
 }
