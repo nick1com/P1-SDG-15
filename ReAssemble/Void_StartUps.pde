@@ -70,6 +70,13 @@ void startUp2() {
 void startUp3() {
 LoadingYellow = loadImage("LoadingYellow.png");
 LoadingYellow.resize(width,height);
+
+LoadingBlue = loadImage("LoadingBlue.png");
+LoadingBlue.resize(width,height);
+
+LoadingRed = loadImage("LoadingRed.png");
+LoadingRed.resize(width,height);
+
 }
 
 
@@ -189,4 +196,62 @@ Buy_the_forest = new EndingButton(1,"Buy the forest");
 Settle_down_in_the_forest = new EndingButton(2,"Settle down in the forest");
 Refuse_to_buy_the_forest = new EndingButton(3,"Refuse to buy the forest");
 
+
+}
+
+
+
+
+//----------------------------------------pictures----------------------------------------------//
+void pitcures() {
+
+  Guy1GhostNew=loadImage("Guy1GhostNew.png");
+  Guy1GhostReverse=loadImage("Guy1GhostReverse.png");
+  backgroundFar2=loadImage("BackgroundJngTrees.png");
+  backgroundMid2=loadImage("MiddlegroundJngTrees.png");
+  backgroundClo2=loadImage("GroundForest1.png");
+  backgroundFar3=loadImage("Forrest2Fields.png");
+  backgroundMid3=loadImage("MiddlegroundJngTrees.png");
+  backgroundClo3=loadImage("GroundForest1.png");
+  background1Ext3=loadImage("Forrest2FieldsRiver.png");
+  background2Ext3=loadImage("Forrest2Sky.png");
+  background3Ext3=loadImage("BackgroundJngSky.png");
+
+  backgroundFar4=loadImage("Scene3BurntDownBackGround.png");
+  backgroundMid4=loadImage("Scene3BurntDown.png");
+  backgroundClo4=loadImage("GroundForest2.png");
+  treeFull=loadImage("INTERtree1.png");
+  treeCut=loadImage("INTERtree2.png");
+  
+  treeGood=loadImage("INTERtreeSpirit.png");
+  treeOkay=loadImage("INTERtreeSpiritAngry.png");
+  treeBad=loadImage("INTERtreeSpiritDead.png");
+  relic=loadImage("YouSeeItIsAMetaphor.png");
+  backgroundFar2.resize(width, height);
+  backgroundMid2.resize(width, height);
+  backgroundClo2.resize(width, height);
+
+  backgroundFar3.resize(width, height);
+  backgroundMid3.resize(width, height);
+  backgroundClo3.resize(width, height);
+  background1Ext3.resize(width, height);
+  background2Ext3.resize(width, height);
+  background3Ext3.resize(width, height);
+
+
+  backgroundFar4.resize(width, height);
+  backgroundMid4.resize(width, height);
+  backgroundClo4.resize(width, height);
+  
+  treeGood.resize(width,height);
+  treeOkay.resize(width,height);
+  treeBad.resize(width,height);
+  relic.resize(width,height);
+  
+
+  treeFull.resize(width, height);
+  treeCut.resize(width, height);
+  Guy1GhostNew.resize(width, height);
+  Guy1GhostReverse.resize(width, height);
+  
 }

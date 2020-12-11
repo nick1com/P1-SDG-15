@@ -56,7 +56,7 @@ break;
 case 2: //this is the loadingscreen before quest 1
 if (mouseX>=width*0.5875 && mouseX<=width*0.6625 && mouseY>=height*0.6375 && mouseY<=height*0.675){ //
 pageCounter = 2;
-convoCounter = 40;
+convoCounter = 10;
 }
 break;
 
@@ -67,8 +67,31 @@ convoCounter = 0;
 break;
 
 
+case 10:
+pageCounter = 10;
+//println("case 10", "OV");
+break;
+
+case 12:
+pageCounter = 12;
+//println("case 12", "OV");
+break;
+
+case 13:
+pageCounter = 13;
+//println("case 13", "OV");
+break;
+
+
+case 14:
+pageCounter = 14;
+//println("case 14", "OV");
+break;
+
+
 case 40: 
 pageCounter = 40;
+//println("case 40", "OV");
 break;
 
 

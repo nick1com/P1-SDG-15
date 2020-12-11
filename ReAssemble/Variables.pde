@@ -30,8 +30,8 @@ float ShamanDetection;
 float jump=0;
 float jumpSpeed=6;
 
-int movement=2;
-int backmove=2;
+//int movement=2;
+//int backmove=2;
 
 float ShamanHouseoffset=0.62;
 
@@ -85,7 +85,8 @@ float ExitbuttonX, ExitbuttonY, ExitbuttonXW, ExitbuttonYH;
 //-----------------------------------------------Endings----------------------------------------------------------------//
 //int convoCounter = 0;
 //int pageCounter = 0;
-
+int TreesCut1 = 0;
+int TreesCut2 = 0;
 int TreesCut = 0;
 int TreesCutForEndings = 0;
 int treeIncrement = 0;
@@ -113,3 +114,100 @@ int colorOfContinueText = #d62020;
 
 //fjern når det bliver sat sammen med hovedprogram
 int PatchWork = 0;
+
+
+
+
+
+//-----------------------------------------------NICKS----------------------------------------------------------------//
+
+
+
+
+
+//---------------------------------------------------------------------//
+
+
+void Classes() {
+  B2T1 = new Tree();
+  B2T2= new Tree();
+  B2T3 = new Tree();
+  B2T4= new Tree();
+  B2T5 = new Tree();
+  B2T6= new Tree();
+  B2T7 = new Tree();
+  B2T8 = new Tree();
+  Main = new Characters();
+
+  
+}
+
+
+//---------------------------------------------------------------------//
+
+
+void variables() {
+
+  personX = 0;
+//  personY=20;
+  personY = (-1*(height*0.0575));
+  personW=20;
+  personH=93;
+  personYOrig = (-1*(height*0.0575));
+  personsizeX=width/10;
+  personsizeY=height/4;
+}
+
+
+//---------------------------------------------------------------------//
+
+
+
+Tree B2T1;
+Tree B2T2;
+Tree B2T3;
+Tree B2T4;
+Tree B2T5;
+Tree B2T6;
+Tree B2T7;
+Tree  B2T8;
+
+Characters Main; 
+
+
+
+int personW;
+int personH;
+float personYOrig;
+int personsizeX;
+int personsizeY;
+
+public int movement=2;
+public int moveFar=2;
+public int moveMid=2;
+public int moveClo=2;
+public int backmove=4;
+
+/*
+
+float jump=0;
+float jumpSpeed=10;
+float jumpHeight=150;
+float gravity=0.80;
+boolean groundLevel=true;
+
+*/
+
+
+
+boolean use=false;
+boolean use1=false;
+boolean use2=false;
+boolean use3=false;
+boolean use4=false;
+boolean use5=false;
+boolean use6=false;
+
+boolean RightChoice2=true;
+//boolean RightChoice3=false;
+boolean reset=false;

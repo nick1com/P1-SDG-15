@@ -5,23 +5,37 @@
 void mouseClicked(){
   switch(pageCounter) {
   case 0:
-  println(pageCounter, "", "mouseClicked 0");
+  //println(pageCounter, "", "mouseClicked 0");
   FrontpageMouseClicked(); //frontpage clicks //go to Over_All_Sceen_Selection_Structure tab to find function
   break;
   
   case 1:
   //mouseClickedPageCounter();
-  println(pageCounter, "", "mouseClicked 1");
+  //println(pageCounter, "", "mouseClicked 1");
   SceneSelecter(); //frontpage clicks //go to Over_All_Sceen_Selection_Structure tab to find function
   break;
   
   
   case 100:
   SceneSelecter();
+  //println("case 100", "MK");
+  break;
+  
+  case 11:
+  SceneSelecter();
+  //println("case 11", "MK");
   break;
   
   
+  case 13:
+  SceneSelecter();
+  //println("case 13", "MK");
+  break;
   
+  case 15:
+  SceneSelecter();
+  //println("case 15", "MK");
+  break;
   
   
   case 2:
@@ -33,12 +47,12 @@ void mouseClicked(){
   Settle_down_in_the_forest.Settle_down_in_the_forestVOID();
   Refuse_to_buy_the_forest.Refuse_to_buy_the_forestVOID();
   ChooseEnding();
-  println(pageCounter, "", "mouseClicked 40");
+  //println(pageCounter, "", "mouseClicked 40");
   break;
   
   case 41:
   ChooseEnding();
-  println(pageCounter, "", "mouseClicked 41");
+  //println(pageCounter, "", "mouseClicked 41");
   break;
   
   }

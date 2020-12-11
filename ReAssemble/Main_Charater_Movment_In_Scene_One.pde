@@ -10,7 +10,10 @@ void keyPressed() {
 
   if (key == 'w' || keyCode == UP || key == ' ') {
     upJump=true;
-}
+  }
+  if (key == 'e' ) {  
+    use=true;
+  }
 }
 
 
@@ -27,7 +30,9 @@ void keyReleased() {
   if (key == 'w' || keyCode == UP || key == ' ') {
     upJump=false;
   }
-
+  if (key == 'e' ) {  
+    use=false;
+  }
 }
 
 
