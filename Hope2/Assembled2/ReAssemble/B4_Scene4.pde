@@ -71,6 +71,6 @@ void relic(int tempX){
 void movementB4() {
   
   
-    Main.moveMent(0, 4000, 0, 4020, 0, 4020);
+    Main.moveMent(0, 4000, 0, 4020);
   
 }

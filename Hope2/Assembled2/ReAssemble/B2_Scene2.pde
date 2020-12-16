@@ -40,21 +40,21 @@ void background2Clo() {
 
 void movementB2() {
 
-  Main.moveMent(0, 1080, 0, 1100, 0, 3420); //  minR maxR minL maxL   
-  Main.moveMent(1130, 1880, 1180, 1900, 0, 0);         
-  Main.moveMent(1970, 2680, 1980, 2710, 0, 0);
-  Main.moveMent(2780, 4000, 2800, 4030, 0, 0);
+  Main.moveMent(0, 1080, 0, 1100); //  minR maxR minL maxL   
+  Main.moveMent(1130, 1880, 1180, 1900);         
+  Main.moveMent(1970, 2680, 1980, 2710);
+  Main.moveMent(2780, 4000, 2800, 4030);
   if (use1||personY <=-400) {
     {   
-      Main.moveMent(1080, 1140, 1100, 1180, 0, 0);
+      Main.moveMent(1080, 1140, 1100, 1180);
     }
   }
   if (use2||personY <=-400) {
-    Main.moveMent(1880, 1980, 1900, 1980, 0, 0);
+    Main.moveMent(1880, 1980, 1900, 1980);
   }
 
   if (use3||personY <=-400) {
-    Main.moveMent(2680, 2800, 2710, 2800, 0, 0);
+    Main.moveMent(2680, 2800, 2710, 2800);
   }
 
 

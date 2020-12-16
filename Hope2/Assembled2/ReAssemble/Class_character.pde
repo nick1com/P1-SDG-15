@@ -19,7 +19,6 @@ class Characters {
     gravity=-0.50;
     groundLevel=true;
     y=personY;
-    //  y=personY;
     h=100;
     w=24;
   }
@@ -28,25 +27,16 @@ class Characters {
   //---------------------------------------------------------------------//
 
 
-  void moveMent(int minRtemp, int maxRtemp, int minLtemp, int maxLtemp, int minJTemp, int maxJTemp) {
+  void moveMent(int minRtemp, int maxRtemp, int minLtemp, int maxLtemp) {
     int minR =minRtemp;
     int minL = minLtemp;
     int maxR = maxRtemp;
     int maxL = maxLtemp;
-    int minJ = minJTemp;
-    int maxJ =maxJTemp;
     moveCounter();
     moveRight(minR, maxR);
     moveLeft(minL, maxL);   
-    moveJump(minJ, maxJ);
-    
-      y=personY;
-    //  println(groundLevel);
-    //  println(x);
-//  println(upJump);
-//  println(groundLevel);
-
-
+    moveJump();
+    y=personY;
   }
 
 
@@ -57,11 +47,7 @@ class Characters {
     imageX=-60;
     x=personX+movement; 
     y=personY;
-
-
-    image(mainPicUse, x+imageX, personY);   
-    //println(x);
-    //println(moveClo);}
+    image(mainPicUse, x+imageX, personY);
   }
 
 
@@ -70,9 +56,7 @@ class Characters {
 
   void movementDirection() {
 
-
     if (moveRight) {
-
       mainChar1(Guy1GhostNew);
     }
     if (moveLeft) {
@@ -91,14 +75,14 @@ class Characters {
   void moveMent2() {
     moveRight(0, width*15);
     moveLeft(0, width*15);   
-//    moveJump(0, width*15);
+    //    moveJump(0, width*15);
   }
 
 
   //--------------------------------------------------------------int minTemp, int maxTemp-------//
 
 
-  void moveRight(int minTemp, int maxTemp){
+  void moveRight(int minTemp, int maxTemp) {
     int Min = minTemp;
     int Max = maxTemp;
 
@@ -152,49 +136,29 @@ class Characters {
   //---------------------------------------------------------------------//
 
 
-  void moveJump(int minTemp, int maxTemp) {
-    int Max = maxTemp;
-    int Min = minTemp;
-//println(personYOrig);
-//println(personY);
-    if (personY>=personYOrig){
+  void moveJump() {
+
+    if (personY>=personYOrig) {
 
       personY=personYOrig;
       jump=0;
       groundLevel=true;
     }
-    /* 
-     }
-     if (jump <=jumpHeight) {      
-     groundLevel=false;
-     }
-     && movement+moveClo>Min && movement+moveClo<Max
-     */
+
     if (upJump) {
-    if(groundLevel){
-      jump=jumpSpeed;
-      groundLevel=false;
-    }}
+      if (groundLevel) {
+        jump=jumpSpeed;
+        groundLevel=false;
+      }
+    }
 
 
 
     if (!groundLevel) {
       jump-=gravity;
     }
-    /*
-  if(y>personYOrig){
-     y=personYOrig;    
-     }
-     */
 
     personY+=jump;
     y=personY;
-  }
-
-  void landing(float distY) {
-    float newY=distY;
-    personY=-newY;
-    groundLevel=true;
-
   }
 }

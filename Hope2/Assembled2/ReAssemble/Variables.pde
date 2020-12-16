@@ -188,18 +188,6 @@ public int moveMid=2;
 public int moveClo=2;
 public int backmove=4;
 
-/*
-
-float jump=0;
-float jumpSpeed=10;
-float jumpHeight=150;
-float gravity=0.80;
-boolean groundLevel=true;
-
-*/
-
-
-
 boolean use=false;
 boolean use1=false;
 boolean use2=false;
@@ -209,5 +197,4 @@ boolean use5=false;
 boolean use6=false;
 
 boolean RightChoice2=true;
-//boolean RightChoice3=false;
 boolean reset=false;
