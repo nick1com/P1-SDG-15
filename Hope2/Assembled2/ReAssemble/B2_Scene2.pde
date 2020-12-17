@@ -39,7 +39,8 @@ void background2Clo() {
 
 
 void movementB2() {
-
+  Main.moveJump();
+  Main.moveJump();
   Main.moveMent(0, 1728, 0, 1760); //  minR maxR minL maxL   
   Main.moveMent(1808, 3008, 1888, 3040);         
   Main.moveMent(3152, 4288, 3168, 4336);

@@ -70,7 +70,10 @@ void relic(int tempX){
 
 void movementB4() {
   
-  
+    Main.moveJump();
+    Main.moveJump();
     Main.moveMent(0, 4000, 0, 4020);
+
+
   
 }

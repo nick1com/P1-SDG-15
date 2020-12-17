@@ -35,7 +35,7 @@ class Characters {
     moveCounter();
     moveRight(minR, maxR);
     moveLeft(minL, maxL);   
-    moveJump();
+  //  moveJump();
     y=personY;
   }
 
