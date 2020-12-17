@@ -43,21 +43,21 @@ void background3Clo() {
 
 void movementB3() { 
 
-  Main.moveMent(0, 1080, 0, 1100); //  minR maxR minL maxL   
-  Main.moveMent(1130, 1880, 1180, 1900);         
-  Main.moveMent(1970, 2680, 1980, 2710);
-  Main.moveMent(2780, 403000, 2800, 403000);
-  if (use4||personY <=-400) {
+  Main.moveMent(0, 1728, 0, 1760); //  minR maxR minL maxL   
+  Main.moveMent(1808, 3008, 1888, 3040);         
+  Main.moveMent(3152, 4288, 3168, 4336);
+  Main.moveMent(4448, 10240, 4480, 10317);
+  if (use4||personY <=-360) {
     {   
-      Main.moveMent(1080, 1140, 1100, 1180);
+      Main.moveMent(1728, 1837, 1760, 1888);
     }
   }
-  if (use5||personY <=-400) {
-    Main.moveMent(1880, 1980, 1900, 1980);
+  if (use5||personY <=-360) {
+    Main.moveMent(3008, 3168, 3008, 3168);
   }
 
-  if (use6||personY <=-400) {
-    Main.moveMent(2680, 2800, 2710, 2800);
+  if (use6||personY <=-360) {
+    Main.moveMent(4288, 4480, 4336, 4480);
   }}
 
 
@@ -81,7 +81,7 @@ void movementB3() {
       B2T4.display(treeFull, width);
     }
 
-    cutB2T4(1040, 1100, 1160, 1230);
+    cutB2T4(1664, 1760, 1856,1968);
   }
 
 
@@ -94,7 +94,7 @@ void movementB3() {
       B2T4.display(treeFull, (2*width));
     }
 
-    cutB2T5(1810, 1900, 1970, 2020);
+    cutB2T5(2896, 3040, 3168, 3232);
   }
 
 
@@ -107,7 +107,7 @@ void movementB3() {
       B2T6.display(treeFull, (3*width));
     }
 
-    cutB2T6(2640, 2700, 2770, 2836);
+    cutB2T6(4224, 4320, 4432, 4538);
   }
   
   

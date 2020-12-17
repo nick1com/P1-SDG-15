@@ -40,37 +40,24 @@ void background2Clo() {
 
 void movementB2() {
 
-  Main.moveMent(0, 1080, 0, 1100); //  minR maxR minL maxL   
-  Main.moveMent(1130, 1880, 1180, 1900);         
-  Main.moveMent(1970, 2680, 1980, 2710);
-  Main.moveMent(2780, 4000, 2800, 4030);
-  if (use1||personY <=-400) {
+  Main.moveMent(0, 1728, 0, 1760); //  minR maxR minL maxL   
+  Main.moveMent(1808, 3008, 1888, 3040);         
+  Main.moveMent(3152, 4288, 3168, 4336);
+  Main.moveMent(4448, 10240, 4480, 10317);
+  
+  if (use1||personY <=-360) {
     {   
-      Main.moveMent(1080, 1140, 1100, 1180);
+      Main.moveMent(1728, 1837, 1760, 1888);
     }
   }
-  if (use2||personY <=-400) {
-    Main.moveMent(1880, 1980, 1900, 1980);
+  if (use2||personY <=-360) {
+    Main.moveMent(3008, 3168, 3008, 3168);
   }
 
-  if (use3||personY <=-400) {
-    Main.moveMent(2680, 2800, 2710, 2800);
+  if (use3||personY <=-360) {
+    Main.moveMent(4288, 4480, 4336, 4480);
   }
 
-
-  /* if (use1) {
-   
-   Main.moveMent(1020, 1820, 1200, 1954, 1020, 1820);
-   }
-   if (use2) {
-   Main.moveMent(1820, 2620, 1954, 2654, 1820, 2620);
-   }
-   
-   if (use3) {
-   Main.moveMent(2620, 3420, 2654, 3454, 2620, 3420);
-   }
-   
-   */
 }
 
 
@@ -82,7 +69,6 @@ void scene2Trees() {
   tree1();
   tree2();
   tree3();
-//  P1.display(000, 00);
 }
 
 
@@ -95,7 +81,7 @@ void tree1() {
     B2T1.display(treeFull, width);
   }
 
-  cutB2T1(1040, 1100, 1160, 1230);
+  cutB2T1(1664, 1760, 1856,1968);
 }
 
 
@@ -108,7 +94,7 @@ void tree2() {
     B2T2.display(treeFull, (2*width));
   }
 
-  cutB2T2(1810, 1900, 1970, 2020);
+  cutB2T2(2896, 3040, 3168, 3232);
 }
 
 
@@ -121,7 +107,7 @@ void tree3() {
     B2T3.display(treeFull, (3*width));
   }
 
-  cutB2T3(2640, 2700, 2770, 2836);
+  cutB2T3(4224, 4320, 4432, 4538);
 }
 
 

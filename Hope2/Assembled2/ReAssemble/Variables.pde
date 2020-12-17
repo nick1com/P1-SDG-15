@@ -83,8 +83,6 @@ float ExitbuttonX, ExitbuttonY, ExitbuttonXW, ExitbuttonYH;
 
 
 //-----------------------------------------------Endings----------------------------------------------------------------//
-//int convoCounter = 0;
-//int pageCounter = 0;
 int TreesCut1 = 0;
 int TreesCut2 = 0;
 int TreesCut = 0;

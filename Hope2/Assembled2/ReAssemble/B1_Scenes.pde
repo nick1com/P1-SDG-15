@@ -2,6 +2,9 @@
 
 
 void Scene2() {
+    backmove=4;
+
+  
   background2Far();
   scene2Trees();
   background2Clo();
@@ -9,7 +12,7 @@ void Scene2() {
   movementB2();
   Choice2();
 
-  if(movement+moveClo>=3500){
+  if(movement+moveClo>=5600){
     pageCounter = 11;
     convoCounter = 12;
     movement=2;
@@ -32,7 +35,7 @@ void Scene3() {
   movementB3();
   Main.movementDirection();
   
-  if(movement+moveClo>=3500){
+  if(movement+moveClo>=5600){
     pageCounter = 13;
     convoCounter = 14;
     movement=2;
@@ -59,11 +62,8 @@ void Scene4() {
   movementB4();
   Main.movementDirection();
   if(use){
- if(movement+moveClo<=1220 && movement+moveClo>=1050){
+ if(movement+moveClo<=1950 && movement+moveClo>=1680){
    pageCounter = 40;
    convoCounter = 40;
-
  }}
-  
-  //  println(personX+moveClo);
 }

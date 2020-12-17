@@ -152,8 +152,6 @@ class Characters {
       }
     }
 
-
-
     if (!groundLevel) {
       jump-=gravity;
     }

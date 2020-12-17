@@ -26,7 +26,7 @@ void shamanDetect() {
   textSize(width/22);
   text("E",width*0.61,height*0.65);
  }
-//println("Y" + mouseY); 
+
 }
 
 
@@ -40,9 +40,7 @@ void convoOne() {
   
 switch(convoCounter) {
 case 0:// nothing has happend yet
- backmove=2;
- //println(pageCounter, "", "page 1");
- //println(convoCounter, "", "case 0");
+ backmove=4;
 break;
 
 
@@ -62,13 +60,10 @@ fill(255);
   textSize(width/120);
   text("ACCEPT",width*0.63,height*0.66875);
   text("DECLINE",width*0.73,height*0.66875);
-  
-  //println(pageCounter, "", "page 1");
- //println(convoCounter, "", "case 1");
+
 break;
 
 case 2: //you agree 
-//backmove=0;
   background5();
  fill(255);
   rect(width*0.65,height*0.61,width/4,height/5); 
@@ -79,8 +74,6 @@ case 2: //you agree
   text("Great, see you on the other side.",width*0.55,height*0.5875);
   textSize(width/120);
   text("DONE",width*0.635,height*0.66875);
-  //println(pageCounter, "", "page 1");
-  //println(convoCounter, "", "case 2");
 
 break;
 
@@ -97,8 +90,7 @@ background(0);
   text("GET IT DONE! *hangs up*",width*0.47,height*0.63);
   textSize(width/120);
   text("OK",width*0.64,height*0.66875);
-  //println(pageCounter, "", "page 1");
-  //println(convoCounter, "", "case 3");
+
 break;
 
 

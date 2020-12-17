@@ -69,29 +69,24 @@ break;
 
 case 10:
 pageCounter = 10;
-//println("case 10", "OV");
 break;
 
 case 12:
 pageCounter = 12;
-//println("case 12", "OV");
 break;
 
 case 13:
 pageCounter = 13;
-//println("case 13", "OV");
 break;
 
 
 case 14:
 pageCounter = 14;
-//println("case 14", "OV");
 break;
 
 
 case 40: 
 pageCounter = 40;
-//println("case 40", "OV");
 break;
 
 

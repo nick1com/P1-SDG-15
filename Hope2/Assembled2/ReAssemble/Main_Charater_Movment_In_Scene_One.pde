@@ -45,9 +45,9 @@ void movement(){
     }
   
   if(Right){   
-    /*moveFar=moveFar-backmove*2;
+    moveFar=moveFar-backmove*2;
     moveMid=moveMid-backmove*3;
-    moveClo=moveClo-backmove*4;*/
+    moveClo=moveClo-backmove*4;
     
     moveRight=true;
     moveLeft=false;

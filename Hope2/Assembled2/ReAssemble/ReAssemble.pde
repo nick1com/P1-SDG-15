@@ -2,7 +2,8 @@
 Box instructionFrame;
 
 void setup() {
-size(800,800);
+  size(1280,720);
+//size(800,800);
 //fullScreen();
   
 object_values();
@@ -18,8 +19,7 @@ startUp4();
 }
 
 void draw() {
-println(TreesCut);
-println(TreesCut2, "2");
+
 //These switch case statements check which page you are on, 
 //depending which value the variable pageCounter is on.   
 
@@ -29,7 +29,7 @@ switch(pageCounter) {
  
 case 0: //frontpage
 drawFrontpage();
-//println(pageCounter, "", "case 0");
+
 break;
 
 
@@ -49,12 +49,10 @@ shamanE();
 convoOne();
 movement();
 Character();
-//println(pageCounter, "", "case 1");
 break;
 
 case 2: // Loading Screen 1
 LoadingScreenOne();
-//println(pageCounter, "", "page 2");
 break;
 
 
@@ -74,7 +72,6 @@ break;
 
 case 11:
 LoadingScreenTwo();
-//println("case 11", "LD2");
 break;
 
 
@@ -86,7 +83,6 @@ break;
 
 case 12:
 Scene3();
-//println("case 12", "SC3");
 break;
 
 
@@ -100,7 +96,6 @@ break;
 
 case 13:
 LoadingScreenThree();
-//println("case 13", "LD3");
 break;
 
 
@@ -113,9 +108,7 @@ break;
 
 case 14:
 TreesCut = TreesCut1 + TreesCut2;
-//println(TreesCut);
 Scene4();
-//println("case 14", "SC4");
 break;
 
 
