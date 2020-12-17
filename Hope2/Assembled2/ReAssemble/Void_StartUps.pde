@@ -43,7 +43,6 @@ void startUp2() {
   ShamanY=(-1*(height/10));
   personY=(-1*(height/12));
   ShamanDetection=width*0.35;
-  //fullScreen();
   characterMain=loadImage("Guy1Normal.png");
   characterMainRev=loadImage("Guy1Reverse.png");
   

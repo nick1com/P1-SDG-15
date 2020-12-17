@@ -30,9 +30,6 @@ float ShamanDetection;
 float jump=0;
 float jumpSpeed=6;
 
-//int movement=2;
-//int backmove=2;
-
 float ShamanHouseoffset=0.62;
 
 int personX;
@@ -168,7 +165,7 @@ Tree B2T4;
 Tree B2T5;
 Tree B2T6;
 Tree B2T7;
-Tree  B2T8;
+Tree B2T8;
 
 Characters Main; 
 

@@ -72,7 +72,7 @@ void movement(){
 
 void mainChar1(PImage mainPicUse,float mainStartX){
    
-  image(mainPicUse,mainStartX,personY+jump);
+  image(mainPicUse,mainStartX,personY);
     
   }
 
