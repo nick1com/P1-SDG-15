@@ -5,3 +5,6 @@ The story is about deforestation and its effect on climate change.
 
 ## How to install and use:
 
+Step 1: Download this GitHub repository as a ZIP-file under the Code tab and unzip it into a folder.
+
+Step 2: Go to the appplication.windows64 folder and run the ReAssemble.exe file to play the game.
